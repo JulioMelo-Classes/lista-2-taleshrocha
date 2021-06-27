@@ -1,0 +1,36 @@
+\hypertarget{all__any__none__of_8h}{}\doxysection{all\+\_\+any\+\_\+none\+\_\+of.\+h File Reference}
+\label{all__any__none__of_8h}\index{all\_any\_none\_of.h@{all\_any\_none\_of.h}}
+
+
+This code implements the all\+\_\+of, any\+\_\+of and none\+\_\+of functions there are present in the std library.  
+
+
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{all__any__none__of_8h_a71886180fc29797613d8bf6135eaeb70}\label{all__any__none__of_8h_a71886180fc29797613d8bf6135eaeb70}} 
+{\footnotesize template$<$class Input\+It , class Unary\+Predicate $>$ }\\bool {\bfseries graal\+::all\+\_\+of} (Input\+It first, Input\+It last, Unary\+Predicate p)
+\begin{DoxyCompactList}\small\item\em Returns true only if all of the array elements return true from the predicate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{all__any__none__of_8h_a725b633ba5d81dcde5d739fdc204aeb3}\label{all__any__none__of_8h_a725b633ba5d81dcde5d739fdc204aeb3}} 
+{\footnotesize template$<$class Input\+It , class Unary\+Predicate $>$ }\\bool {\bfseries graal\+::any\+\_\+of} (Input\+It first, Input\+It last, Unary\+Predicate p)
+\begin{DoxyCompactList}\small\item\em Returns true only if one or more of the array elements return true from the predicate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{all__any__none__of_8h_af3287912c0de810de83b859d58294071}\label{all__any__none__of_8h_af3287912c0de810de83b859d58294071}} 
+{\footnotesize template$<$class Input\+It , class Unary\+Predicate $>$ }\\bool {\bfseries graal\+::none\+\_\+of} (Input\+It first, Input\+It last, Unary\+Predicate p)
+\begin{DoxyCompactList}\small\item\em Returns true only if none of the array elements return true from the predicate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This code implements the all\+\_\+of, any\+\_\+of and none\+\_\+of functions there are present in the std library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & Is the first element of the array. \\
+\hline
+{\em last} & Is the last element of the array. \\
+\hline
+{\em p} & Is a predicate. Can return true or false. \\
+\hline
+\end{DoxyParams}
