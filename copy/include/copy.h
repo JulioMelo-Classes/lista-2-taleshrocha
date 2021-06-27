@@ -10,15 +10,22 @@ using std::sort;
 
 namespace graal {
 
-/*! 
- * TODO: documentação no estilo doxygen
- */
-template<class InputIt>
-InputIt copy(InputIt first, InputIt last, InputIt d_first)
-{
-    // TODO
-    return first;
-}
+    /*! 
+     * \brief Copy elements from a array to the other and returns a pointer to the end of the copied
+     * array
+     * \param first A pointer pointing to the beginning of the array.
+     * \param last A pointer pointing to the end of the array.
+     * \param d_first The beginning of the array which the elements are going to be copied.
+     */
+    template<class InputIt>
+    InputIt copy(InputIt first, InputIt last, InputIt d_first){
 
+        while(first != last){
+            *d_first = *first;
+            d_first++;
+            first++;
+        }
+        return d_first;
+    }
 }
 #endif
