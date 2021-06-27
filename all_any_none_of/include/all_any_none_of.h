@@ -19,7 +19,7 @@ using std::sort;
 
 namespace graal {
 
-    //! \brief Returns true only if all of the array elements return true from the predicate
+    //! \return True only if all of the array elements return true from the predicate
     template<class InputIt, class UnaryPredicate>
     bool all_of(InputIt first, InputIt last, UnaryPredicate p){
         if(first == last) return false;
@@ -30,7 +30,7 @@ namespace graal {
         return true;
     }
 
-    //! \brief Returns true only if one or more of the array elements return true from the predicate
+    //! \return True only if one or more of the array elements return true from the predicate
     template<class InputIt, class UnaryPredicate>
     bool any_of(InputIt first, InputIt last, UnaryPredicate p)
     {
@@ -41,7 +41,7 @@ namespace graal {
         return false;
     }
 
-    //! \brief Returns true only if none of the array elements return true from the predicate
+    //! \return True only if none of the array elements return true from the predicate
     template<class InputIt, class UnaryPredicate>
     bool none_of(InputIt first, InputIt last, UnaryPredicate p)
     {

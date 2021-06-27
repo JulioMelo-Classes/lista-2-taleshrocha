@@ -10,15 +10,22 @@ using std::sort;
 
 namespace graal {
 
-/*! 
- * TODO: documentação no estilo doxygen
- */
-template<class ForwardIt, class UnaryPredicate>
-ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p)
-{
-    // TODO
-    return last;
-}
-
+    /*! 
+     * \param first Points to the first element of the array.
+     * \param last Points to the last element of the array.
+     * \param p Is a predicate.
+     * \return A pointer to the element after the last element that made the predicate true.
+     */
+    template<class ForwardIt, class UnaryPredicate>
+    ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p){
+        first = std::find_if_not(first, last, p);
+        ForwardIt next = first + 1;
+        if(first == last) return last;
+        while(next != last){
+            if(p(*next)){std::iter_swap(next, first); first++;}
+            next++;
+        }
+        return first;
+    }
 }
 #endif
