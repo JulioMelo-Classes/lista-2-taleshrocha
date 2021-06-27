@@ -1,0 +1,40 @@
+\hypertarget{equal_8h}{}\doxysection{equal.\+h File Reference}
+\label{equal_8h}\index{equal.h@{equal.h}}
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Input\+It1 , class Input\+It2 , class Equal $>$ }\\bool \mbox{\hyperlink{equal_8h_adb3864218a6a87c8123b993790bb5b76}{graal\+::equal}} (Input\+It1 first1, Input\+It1 last1, Input\+It2 first2, Equal eq)
+\begin{DoxyCompactList}\small\item\em This function returns true if the elements of both arrays are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{equal_8h_a59c60f7d4cc5c4e11e7a9c4d78257db3}\label{equal_8h_a59c60f7d4cc5c4e11e7a9c4d78257db3}} 
+{\footnotesize template$<$class Input\+It1 , class Input\+It2 , class Equal $>$ }\\bool {\bfseries graal\+::equal} (Input\+It1 first1, Input\+It1 last1, Input\+It2 first2, Input\+It2 last2, Equal eq)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{equal_8h_adb3864218a6a87c8123b993790bb5b76}\label{equal_8h_adb3864218a6a87c8123b993790bb5b76}} 
+\index{equal.h@{equal.h}!equal@{equal}}
+\index{equal@{equal}!equal.h@{equal.h}}
+\doxysubsubsection{\texorpdfstring{equal()}{equal()}}
+{\footnotesize\ttfamily template$<$class Input\+It1 , class Input\+It2 , class Equal $>$ \\
+bool graal\+::equal (\begin{DoxyParamCaption}\item[{Input\+It1}]{first1,  }\item[{Input\+It1}]{last1,  }\item[{Input\+It2}]{first2,  }\item[{Equal}]{eq }\end{DoxyParamCaption})}
+
+
+
+This function returns true if the elements of both arrays are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first1} & Points to the beginning of the first array. \\
+\hline
+{\em last1} & Points to the end of the first array. \\
+\hline
+{\em first2} & Points to the beginning of the second array. \\
+\hline
+{\em last2} & Points to the end of the second array. \\
+\hline
+{\em eq} & A function that only return true when both of it\textquotesingle{}s arguments are equal. \\
+\hline
+\end{DoxyParams}

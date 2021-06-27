@@ -1,3 +1,4 @@
+//! \file copy.h
 #ifndef GRAAL_H
 #define GRAAL_H
 
