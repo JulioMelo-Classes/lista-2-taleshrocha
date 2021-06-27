@@ -11,7 +11,10 @@ using std::sort;
 
 namespace graal {
     /*! 
-     * TODO: documentação no estilo doxygen
+     * /param first Points to the first element in the array. 
+     * /param last Points to the last element in the array. 
+     * /param n_first Points to the first element of the new array .
+     * /return The last element of the new array.
      */
     template<class ForwardIt>
     ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last){
