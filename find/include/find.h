@@ -19,6 +19,9 @@ namespace graal {
      * \param value Value to be compared in the function. 
      * \param Equal A function that return true when both of it's parameter are equal.
      */
+     /*
+     95%
+     */
     template<class InputIt, class T, class Equal>
     InputIt find(InputIt first, InputIt last, const T& value, Equal eq){
         while(first != last){

@@ -14,6 +14,9 @@ namespace graal {
      * \param first Points to the first element of the array.
      * \param last Points to the last element of the array.
      */
+     /*
+     ok
+     */
     template<class BidirIt>
     void reverse(BidirIt first, BidirIt last){
         auto dist = distance(first, last);

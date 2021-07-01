@@ -18,6 +18,10 @@ namespace graal {
      * \param last2 Points to the end of the second array. 
      * \param eq A function that only return true when both of it's arguments are equal.
      */
+
+     /*
+     90% deveria documentar os dois métodos separadamente, faltou também documentar o valor de retorno
+     */
     template<class InputIt1, class InputIt2, class Equal>
     bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq){
         while(first1 != last1){

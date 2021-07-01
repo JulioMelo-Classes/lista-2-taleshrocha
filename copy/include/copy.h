@@ -18,6 +18,9 @@ namespace graal {
      * \param last A pointer pointing to the end of the array.
      * \param d_first The beginning of the array which the elements are going to be copied.
      */
+     /*
+     95% faltou documentar o valor de retorno
+     */
     template<class InputIt>
     InputIt copy(InputIt first, InputIt last, InputIt d_first){
 

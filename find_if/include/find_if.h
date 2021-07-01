@@ -18,6 +18,9 @@ namespace graal {
      * \param last points to the last element of the array.
      * \param p A boolean function.
      */
+     /*
+     95%
+     */
     template<class InputIt, class UnaryPredicate>
     InputIt find_if(InputIt first, InputIt last, UnaryPredicate p){
         while(first != last){

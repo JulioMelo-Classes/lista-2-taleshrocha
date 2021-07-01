@@ -18,7 +18,9 @@ using std::distance;
 using std::sort;
 
 namespace graal {
-
+    /*
+    80% faltou o resto da documentação, mas blz
+    */
     //! \return True only if all of the array elements return true from the predicate
     template<class InputIt, class UnaryPredicate>
     bool all_of(InputIt first, InputIt last, UnaryPredicate p){

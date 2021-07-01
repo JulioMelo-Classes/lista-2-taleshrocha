@@ -1,3 +1,0 @@
-/home/tales/Documents/2021.1/LP1/lista-2-taleshrocha/equal/build/CMakeFiles/rebuild_cache.dir
-/home/tales/Documents/2021.1/LP1/lista-2-taleshrocha/equal/build/CMakeFiles/edit_cache.dir
-/home/tales/Documents/2021.1/LP1/lista-2-taleshrocha/equal/build/CMakeFiles/run_tests.dir

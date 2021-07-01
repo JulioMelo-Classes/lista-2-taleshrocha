@@ -15,6 +15,9 @@ namespace graal {
      * \param Equal A boolean function.
      * \return A pointer to the last element that makes the Equal function false.
      */
+     /*
+     ok
+     */
     template<class InputIt, class Equal>
     InputIt unique( InputIt first, InputIt last, Equal eq ){
         last--;

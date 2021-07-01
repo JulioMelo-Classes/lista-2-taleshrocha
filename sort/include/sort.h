@@ -15,6 +15,9 @@ namespace graal {
      * /param last Points to the last element of the array. 
      * /param cmp A boolean function. 
      */
+     /*
+     ok
+     */
     template<class ForwardIt, class Comparison>
     void sort(ForwardIt first, ForwardIt last, Comparison cmp){
         auto aux = first+1;
